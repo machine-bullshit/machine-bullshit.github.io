@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content=">Machine Bullshit">
+  <meta name="keywords" content="Machine Bullshit">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Machine Bullshit</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/robot.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">
+
+            <span style="font-size: 85%;">Machine Bullshit: Characterizing the Emergent Disregard for Truth in Large Language Models</span>
+          </h1>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="//kaiquliang.github.io">Kaiqu Liang</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="//haiminhu.org/">Haimin Hu</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="//xuandongzhao.github.io/">Xuandong Zhao</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="//dawnsong.io/">Dawn Song</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="//cocosci.princeton.edu/tom/tom.php">Thomas L. Griffiths</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="//saferobotics.princeton.edu/jaime">Jaime Fernández Fisac</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Princeton University,</span>
+            <span class="author-block"><sup>2</sup>UC Berkeley</span>
+          </div>
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/kevinliang888/Machine-Bullshit"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://huggingface.co/datasets/kaiquliang/BullshitEval"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-database"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!--/ Abstract. -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered">
+      <div class="column is-one">
+        <img src="./static/images/teaser.png" alt="Descriptive Alt Text" style="max-width: 100%; height: auto;"> <br><br>
+
+        <h2 class="title is-3"> What is bullshit?</h2>
+
+         <h2 class="is-size-4"> Bullshit, as initially conceptualized by Harry Frankurt, refers to discourse primarily intended to manipulate the audience’s beliefs, delivered with <b> disregard for its truth value </b>. We extend this definition to characterize bullshit in Large Language Models.</h2>
+        
+        <!-- <br> -->
+  
+        
+        <!-- <h2 class="is-size-5"> <b>How is Bullshit different from Hallucination and Sycophancy?</b></h2>  -->
+
+
+        <!-- <h2 class="is-size-5">
+        <div class="content">
+          <ul>
+            <li>Hallucination describes confident outputs nonsensical or unfaithful to source content.</li>
+            <li>Sycophancy involves models excessively agreeing or flattering users irrespective of accuracy.</li>
+            <li>Bullshit</b> fundamentally refers to discourse generated with <b>disregard for truth</b>, 
+              covering a broader set of rhetorical behaviors, including flowery yet empty language or partially true statements not captured by hallucination or sycophancy.</li>
+          </ul>
+        </div>
+
+        </h2> -->
+      </div>
+    </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-one">
+
+        <!-- Title -->
+        <h2 class="title is-3" style="margin-bottom:2rem;">How to quantify bullshit?</h2>
+
+        <h2 class="title is-4"> Approach 1: Bullshit Index</h2>
+
+        <!-- One-sentence hook -->
+        <h2 class="is-size-5">
+          Bullshit Index&nbsp;(BI) ∈ [0, 1] measures how tightly an AI’s claims follow its beliefs</em>.
+        </h2><br>
+
+        <!-- Formula + quick definition -->
+        <div class="content">
+          <img src="./static/images/BI.png" alt="Descriptive Alt Text" style="max-width: 100%; height: auto;"> <br><br>
+
+          <p style="font-size:1.3rem;">
+            where&nbsp;<code>r<sub>pb</sub></code> is the point-biserial correlation between the model’s
+            belief&nbsp;<em>p</em> (0–1) and claim&nbsp;<em>y</em> (0/1).
+          </p>
+
+          <h2 class="is-size-5">
+          <ul>
+            <li><strong>BI&nbsp;≈&nbsp;1</strong> — claims ignore belief → high bullshit.</li>
+            <li><strong>BI&nbsp;≈&nbsp;0</strong> — |r| ≈ 1 (r ≈ +1 truthful, r ≈ –1 systematic lying).</li>
+            </li>
+          </ul>
+          </h2>
+          <br>
+
+        <h2 class="title is-4" style="margin-bottom:1rem;"> Approach 2: A Taxonomy of Machine Bullshit</h2>
+        <img src="./static/images/taxonomy.png" alt="Descriptive Alt Text" style="max-width: 100%; height: auto;"> <br><br>
+        <h2 class="is-size-5" style="margin-top:-1px;"> We use LLM-as-a-judge to systematically identify bullshit. </h2>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-one">
+
+        <!-- Title -->
+        <h2 class="title is-3" style="margin-bottom:2rem;">What are the causes of bullshit?</h2>
+
+        Note: The following sections present selected subsets of results for brevity. Please refer to the paper for a detailed analysis of machine bullshit.
+
+        <br><br>
+        <h2 class="title is-4"> Reinforcement Learning from Human Feedback (RLHF)</h2>
+        <br>
+        <h2 class="is-size-5"><b>In our marketplace experiments, no matter what facts the AI knows, it insists the products have great features most of the time.</b></h2>
+        <br>
+
+        <img src="./static/images/3.png" alt="Descriptive Alt Text" style="max-width: 90%; height: auto;"> 
+        <br><br>
+
+
+        <h2 class="is-size-5"> <b> The AI doesn’t become confused about the truth—it becomes uncommitted to reporting it. </b> </h2>
+        <br>
+
+        <img src="./static/images/belief.png" alt="Descriptive Alt Text" style="max-width: 100%; height: auto;"> 
+        <br><br>
+
+
+
+        
+        <h2 class="is-size-5"> <b> AI assistants actively generate more bullshit after RLHF </b> </h2>
+        <br>
+
+        <div class="content">
+        <img src="./static/images/RLHF.png" alt="Descriptive Alt Text" style="max-width: 100%; height: auto;"> 
+        <br><br>
+
+
+        <h2 class="title is-4" style="margin-bottom:1rem;"> Chain-of-Thought (CoT) </h2>
+        <img src="./static/images/COT.png" alt="Descriptive Alt Text" style="max-width: 100%; height: auto;"> <br><br>
+
+
+        <h2 class="title is-4"> Principal-agent problem</h2>
+        <img src="./static/images/PA.png" alt="Descriptive Alt Text" style="max-width: 100%; height: auto;"> <br><br>
+
+        <h2 class="title is-4"> Political Contexts</h2>
+        <img src="./static/images/political.png" alt="Descriptive Alt Text" style="max-width: 100%; height: auto;"> <br><br>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>coming soon</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer" style="padding-bottom: 1.5em; padding-top: 1.5em;">
+    <div class="container">
+      <div class="content has-text-centered">
+        <span>Website based on <a href="https://nerfies.github.io">Nerfies</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
